@@ -1,6 +1,6 @@
-import React from 'react';
-import cartTick from '../assests/logo/card-tick-1 1.png';
-import chartSq from '../assests/logo/chart-square 2.png';
+import React from "react";
+import cartTick from "../assests/logo/card-tick-1 1.png";
+import chartSq from "../assests/logo/chart-square 2.png";
 
 const AmazeNft = () => {
   return (
@@ -14,11 +14,14 @@ const AmazeNft = () => {
           <div>
             <div className="flex justify-start  gap-x-3">
               <img src={cartTick} className="w-6 h-6" />
-             <div>
-             <p className="text-lg font-bold">Fast Transaction</p>
-             <p className="text-sm text-gray-500">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
-             </div>
-            
+              <div>
+                <p className="text-lg font-bold">Fast Transaction</p>
+                <p className="text-sm text-gray-500">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing industries for previewing layouts and
+                  visual mockups
+                </p>
+              </div>
             </div>
           </div>
           <div>
@@ -26,7 +29,11 @@ const AmazeNft = () => {
               <img src={chartSq} className="w-6 h-6" />
               <div>
                 <p className="text-lg font-bold">Groth Transaction</p>
-                <p className="text-sm text-gray-500">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
+                <p className="text-sm text-gray-500">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing industries for previewing layouts and
+                  visual mockups
+                </p>
               </div>
             </div>
           </div>

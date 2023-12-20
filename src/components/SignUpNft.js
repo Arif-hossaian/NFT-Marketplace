@@ -1,8 +1,8 @@
-import clsx from 'clsx';
-import ImgOne from '../assests/img/unsplash_E8Ufcyxz514.png';
-import ImgTwo from '../assests/img/unsplash_tZCrFpSNiIQ.png';
-import ImgThree from '../assests/img/unsplash_pVoEPpLw818 (1).png';
-import { Card } from '../shared/Card/Card';
+import clsx from "clsx";
+import ImgOne from "../assests/img/unsplash_E8Ufcyxz514.png";
+import ImgTwo from "../assests/img/unsplash_tZCrFpSNiIQ.png";
+import ImgThree from "../assests/img/unsplash_pVoEPpLw818 (1).png";
+import { Card } from "../shared/Card/Card";
 
 const FloatingItems = ({ className, Icon, title, subtitle }) => {
   return (
@@ -14,7 +14,7 @@ const FloatingItems = ({ className, Icon, title, subtitle }) => {
 
 const SignUpNft = () => {
   return (
-    <section id="about" className="container">
+    <section id="about" className="container mt-48">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         <div className="relative mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:mt-0 xl:-right-20">
           <span className="absolute inset-y-2/4 right-0 -z-10 h-96 max-h-full w-96 max-w-full -translate-y-1/2 rounded-full bg-gradient-radial from-indigo-500/40 via-fuchsia-400/10 blur-2xl" />
@@ -43,9 +43,11 @@ const SignUpNft = () => {
           <h2 className="text-3xl text-gray-900 font-bold">SELL YOUR NFT</h2>
 
           <p className="mt-6 break-words text-lg">
-            {` The project is aimed at developing a web-based instant helping system for Any people. The Law Point which capable of sorting constitutional law resources with emergency contact and get in touch with relevant lawyers. It is easy to track any info and can display appropriate information to the user. The user-friendly interface of the system. Anyone can use this application from anywhere with several browsers and all devices friendly`}
+            {` Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi ac phasellus placerat a pellentesque tellus sed egestas. Et tristique dictum sit tristique sed non. Lacinia lorem id consectetur pretium diam ut. Pellentesque eu sit blandit fringilla risus faucibus.`}
           </p>
-          <button className="border border-gray-900 p-2">Sign Up Now</button>
+          <button className="border border-gray-900 bg-[#3D00B7] text-white py-3 px-5 rounded-full mt-5">
+            Sign Up Now
+          </button>
         </div>
       </div>
     </section>
