@@ -1,26 +1,26 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Fragment, useState, useEffect } from 'react';
-import clsx from 'clsx';
-import { Dialog, Transition } from '@headlessui/react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import React, { Fragment, useState, useEffect } from "react";
+import clsx from "clsx";
+import { Dialog, Transition } from "@headlessui/react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 //import { navItems } from "../../constant/data";
 
 const navLinks = [
   {
-    title: 'Home',
-    path: '/',
+    title: "Home",
+    path: "/",
   },
   {
-    title: 'Marketplace',
-    path: '/marketplace',
+    title: "Marketplace",
+    path: "/marketplace",
   },
   {
-    title: 'Resource',
-    path: '/resource',
+    title: "Resource",
+    path: "/resource",
   },
   {
-    title: 'About',
-    path: '/about',
+    title: "About",
+    path: "/about",
   },
 ];
 
@@ -37,9 +37,9 @@ export const Navbar = () => {
       }
     }
 
-    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
-      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener("scroll", onScroll);
     };
   }, [isSticky]);
 
@@ -47,18 +47,18 @@ export const Navbar = () => {
     <div
       id="navbar"
       className={clsx(
-        'fixed inset-x-0 top-0 z-40  transition-colors duration-300',
+        "fixed inset-x-0 top-0 z-40  transition-colors duration-300",
         isSticky
-          ? 'border-b border-slate-200 h-16 bg-[#fafafa]'
-          : 'bg-transparent'
+          ? "border-b border-slate-200 h-16 bg-[#fafafa]"
+          : "bg-transparent",
       )}
     >
       <nav className=" nav-container">
         <div className="flex justify-between items-center">
-          <h1 className='text-[#3D00B7] font-bold text-3xl'>NFTERS</h1>
-          <div className='font-semibold'>Marketplace</div>
-          <div className='font-semibold'>Resource</div>
-          <div className='font-semibold'>About</div>
+          <h1 className="text-[#3D00B7] font-bold text-3xl">NFTERS</h1>
+          <div className="font-semibold">Marketplace</div>
+          <div className="font-semibold">Resource</div>
+          <div className="font-semibold">About</div>
           <div className="relative text-gray-600">
             <input
               type="search"
@@ -76,7 +76,7 @@ export const Navbar = () => {
                 x="0px"
                 y="0px"
                 viewBox="0 0 56.966 56.966"
-                style={{ enableBackground: 'new 0 0 56.966 56.966' }}
+                style={{ enableBackground: "new 0 0 56.966 56.966" }}
                 xmlSpace="preserve"
                 width="512px"
                 height="512px"
@@ -86,8 +86,12 @@ export const Navbar = () => {
             </button>
           </div>
 
-          <button className="border border-gray-900 p-2 bg-[#3D00B7] rounded-full px-8 text-white py-3">Upload</button>
-          <button className="border border-[#3D00B7] p-2 text-[#3D00B7] rounded-full px-8 py-3">Connect Wallet</button>
+          <button className="border border-gray-900 p-2 bg-[#3D00B7] rounded-full px-8 text-white py-3">
+            Upload
+          </button>
+          <button className="border border-[#3D00B7] p-2 text-[#3D00B7] rounded-full px-8 py-3">
+            Connect Wallet
+          </button>
         </div>
       </nav>
       <MenuPopOver display="flex md:hidden" />
@@ -128,7 +132,7 @@ const MenuPopOver = ({ display }) => {
       >
         <Dialog
           as="div"
-          className={clsx('fixed inset-0 z-50 ', display)}
+          className={clsx("fixed inset-0 z-50 ", display)}
           onClose={setIsOpen}
         >
           <Transition.Child
@@ -142,7 +146,7 @@ const MenuPopOver = ({ display }) => {
           >
             <Dialog.Overlay className="fixed inset-0 bg-black/20 backdrop-blur-sm " />
           </Transition.Child>
-          *{' '}
+          *{" "}
           <div className="fixed top-0 bottom-0 left-0 w-full max-w-xs rounded-r-2xl bg-white p-6 shadow-lg  ">
             <ul className="mt-16 space-y-6">
               {navLinks.map((item) => (
@@ -151,8 +155,8 @@ const MenuPopOver = ({ display }) => {
                     <a
                       onClick={() => setIsOpen(false)}
                       className={clsx(
-                        'peer block text-lg font-semibold transition-all duration-150 hover:text-[#48AB76]',
-                        location.asPath === item.path ? 'text-[#48AB76]' : ''
+                        "peer block text-lg font-semibold transition-all duration-150 hover:text-[#48AB76]",
+                        location.asPath === item.path ? "text-[#48AB76]" : "",
                       )}
                     >
                       {item.title}

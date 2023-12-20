@@ -30,7 +30,7 @@ const data = [
     totalCount: "Total 54 Items",
   },
   {
-    banner1: imgOne,
+    banner1: imgTwo,
     subBanner1: subBanner2OfBn1,
     subBanner2: subBanner2OfBn2,
     subBanner3: subBanner2OfBn3,
@@ -59,12 +59,9 @@ const CollectionFrtNft = () => {
           <h1 className="text-3xl font-bold">COLLECTION FEATURED NFTS</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 mt-10">
             {data.map((i, index) => (
-              <div>
-                <div
-                  key={index}
-                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5"
-                >
-                  <img src={i.banner1} className="h-full w-92" />
+              <div key={index} className="">
+                <div className="flex justify-between">
+                  <img src={i.banner1} className="w-70" />
                   <div>
                     <img src={i.subBanner1} />
                     <img src={i.subBanner2} />
