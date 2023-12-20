@@ -1,14 +1,109 @@
 import React from 'react';
 import imgOne from '../assests/img/unsplash_F56Y7dgrAkc.png';
 import imgTwo from '../assests/img/unsplash_8uZPynIu-rQ.png';
+import imgFour from '../assests/img/unsplash_Tyg0rVhOTrE.png';
+import imgFive from '../assests/img/unsplash_wHJ5L9KGTl4.png';
 import Elpse from '../assests/img/rounded-img/Ellipse 95.png';
 import imgThree from '../assests/img/rounded-img/unsplash_k0rVudBoB4c.png';
 import Etrhereum from '../assests/logo/ethereum 2.png';
+import VerifyImg from '../assests/logo/verify 1.png';
+import imgSix from '../assests/img/rounded-img/unsplash_fT49QnFucQ8.png';
+import imgSeven from '../assests/img/rounded-img/unsplash_5MTf9XyVVgM.png';
+import imgEight from '../assests/img/rounded-img/unsplash_zkNT5mikUuo.png';
+import imgNine from '../assests/img/rounded-img/unsplash_WjIB-6UxA5Q.png';
+
+const data = [
+  {
+    title: 'The Futr Abstr',
+    banner: imgTwo,
+    logo: Elpse,
+    ethLogo: Etrhereum,
+    eth: '0.25 ETH',
+    count: '1 of 8',
+    bidBtn: 'Place a bid',
+  },
+  {
+    title: 'The Futr Abstr',
+    banner: imgFour,
+    logo: Elpse,
+    ethLogo: Etrhereum,
+    eth: '0.25 ETH',
+    count: '1 of 8',
+    bidBtn: 'Place a bid',
+  },
+  {
+    title: 'The Futr Abstr',
+    banner: imgFive,
+    logo: Elpse,
+    ethLogo: Etrhereum,
+    eth: '0.25 ETH',
+    count: '1 of 8',
+    bidBtn: 'Place a bid',
+  },
+];
+
+const topCollectionData = [
+  {
+    numberCount: 1,
+    logo: imgThree,
+    title: 'CryptoFunks',
+    isVerify: true,
+    verifyLogo: VerifyImg,
+    ethLogo: Etrhereum,
+    ethCount: '19,769.39',
+    percentage: '+26.52%',
+    isPercentageUp: true,
+  },
+  {
+    numberCount: 2,
+    logo: imgSix,
+    title: 'Cryptix',
+    isVerify: false,
+    verifyLogo: '',
+    ethLogo: Etrhereum,
+    ethCount: '2,769.39',
+    percentage: '+10.52%',
+    isPercentageUp: false,
+  },
+  {
+    numberCount: 3,
+    logo: imgSeven,
+    title: 'Frensware',
+    isVerify: false,
+    verifyLogo: '',
+    ethLogo: Etrhereum,
+    ethCount: '9,232.39',
+    percentage: '+2.52%',
+    isPercentageUp: true,
+  },
+  {
+    numberCount: 4,
+    logo: imgEight,
+    title: 'PunkArt',
+    isVerify: true,
+    verifyLogo: VerifyImg,
+    ethLogo: Etrhereum,
+    ethCount: '3,769.39',
+    percentage: '+1.52%',
+    isPercentageUp: true,
+  },
+  {
+    numberCount: 5,
+    logo: imgNine,
+    title: 'Art Crypto',
+    isVerify: false,
+    verifyLogo: '',
+    ethLogo: Etrhereum,
+    ethCount: '10,769.39',
+    percentage: '+2.52%',
+    isPercentageUp: false,
+  },
+];
 
 const TopCollectionOver = () => {
   return (
     <div className="container">
-      <div className="contact-grid-section">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-16">
         <div>
           <img src={imgOne} />
           <div>
@@ -21,7 +116,7 @@ const TopCollectionOver = () => {
                 </div>
               </div>
               <div>
-                <h1 className="text-xs font-bold">Highest List</h1>
+                <h1 className="text-xs">Highest Bid</h1>
                 <div className="flex justify-between items-center space-x-2">
                   <img src={Etrhereum} />
                   <p>0.25 ETH</p>
@@ -31,79 +126,58 @@ const TopCollectionOver = () => {
           </div>
         </div>
         <div>
-          <div className="flex justify-start items-center space-x-2">
-            <img src={imgTwo} />
-            <div>
-              <h1>The Futr Abstr</h1>
-              <div className="flex justify-between items-center space-x-1">
-                <img src={Elpse} />
-                <div className="border border-green-600 text-green-600 px-2 py-1 rounded-lg">
-                  <div className="flex justify-start">
-                    <img src={Etrhereum} />
-                    <p>0.25 ETH</p>
+          {data.map((i, index) => (
+            <div key={index} className="flex items-center space-x-4 mb-8">
+              <img src={i.banner} />
+              <div>
+                <h1>{i.title}</h1>
+                <div className="flex items-center space-x-2">
+                  <img src={i.logo} />
+                  <div className="border border-green-600 text-green-600 px-2 py-1 rounded-lg">
+                    <div className="flex items-center space-x-1">
+                      <img src={i.ethLogo} />
+                      <p>{i.eth}</p>
+                    </div>
                   </div>
+                  <div>{i.count}</div>
                 </div>
-                <div>1 of 8</div>
+                <button className="border border-[#220970] hover:bg-[#3D00B7] hover:text-white rounded-full mt-5 px-4 py-2">
+                  {i.bidBtn}
+                </button>
               </div>
-              <button className="border border-gray-900 rounded-2xl mt-5 px-2 py-1">
-                Place a bid
-              </button>
             </div>
-          </div>
-          <div className="flex justify-start items-center space-x-2 mt-2">
-            <img src={imgTwo} />
-            <div>
-              <h1>The Futr Abstr</h1>
-              <div className="flex justify-between items-center space-x-1">
-                <img src={Elpse} />
-                <div className="border border-green-600 text-green-600 px-2 py-1 rounded-lg">
-                  <div className="flex justify-start">
-                    <img src={Etrhereum} />
-                    <p>0.25 ETH</p>
-                  </div>
-                </div>
-                <div>1 of 8</div>
-              </div>
-              <button className="border border-gray-900 rounded-2xl mt-5 px-2 py-1">
-                Place a bid
-              </button>
-            </div>
-          </div>
-          <div className="flex justify-start items-center space-x-2 mt-2">
-            <img src={imgTwo} />
-            <div>
-              <h1>The Futr Abstr</h1>
-              <div className="flex justify-between items-center space-x-1">
-                <img src={Elpse} />
-                <div className="border border-green-600 text-green-600 px-2 py-1 rounded-lg">
-                  <div className="flex justify-start">
-                    <img src={Etrhereum} />
-                    <p>0.25 ETH</p>
-                  </div>
-                </div>
-                <div>1 of 8</div>
-              </div>
-              <button className="border border-gray-900 rounded-2xl mt-5 px-2 py-1">
-                Place a bid
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
         <div>
           <h1 className="font-bold text-2xl">TOP COLLECTION OVER</h1>
-          <p className="text-indigo-600">Last 7 days</p>
-          <div className="flex justify-start items-center space-x-5">
-            <p>1</p>
-            <img src={imgThree} />
-            <div>
-              <p className="text-lg">CryptoFunks</p>
-              <div className="flex justify-between items-center space-x-2">
-                <img src={Etrhereum} />
-                <p>0.25 ETH</p>
+          <p className="text-indigo-600 mt-2 mb-3">Last 7 days</p>
+          {topCollectionData.map((i, index) => (
+            <div className="flex justify-start items-center space-x-5 space-y-6">
+              <p className="text-2xl font-bold">{i.numberCount}</p>
+              <div className="relative">
+                <img src={i.logo} />
+                {i.isVerify ? (
+                  <div className="absolute top-0 right-0">
+                    <img src={VerifyImg} />
+                  </div>
+                ) : (
+                  ''
+                )}
               </div>
+              <div>
+                <p className="text-lg">{i.title}</p>
+                <div className="flex justify-start items-center space-x-2">
+                  <img src={i.ethLogo} />
+                  <p>{i.ethCount}</p>
+                </div>
+              </div>
+              {i.isPercentageUp ? (
+                <p className="text-green-600">{i.percentage}</p>
+              ) : (
+                <p className="text-red-600">{i.percentage}</p>
+              )}
             </div>
-            <p className="text-green-600">+26.52%</p>
-          </div>
+          ))}
         </div>
       </div>
     </div>

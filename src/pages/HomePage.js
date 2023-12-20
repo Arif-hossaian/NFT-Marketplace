@@ -4,6 +4,8 @@ import Banner from '../components/Banner'
 import AmazeNft from '../components/AmazeNft'
 import TopCollectionOver from '../components/TopCollectionOver'
 import CollectionFrtNft from '../components/CollectionFrtNft'
+import SignUpNft from '../components/SignUpNft'
+import DiscoverNfts from '../components/DiscoverNfts'
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
         <AmazeNft />
         <TopCollectionOver />
         <CollectionFrtNft />
+        <SignUpNft />
+        <DiscoverNfts />
     </Layout>
   )
 }

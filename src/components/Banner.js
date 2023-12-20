@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import BannerIMg from '../assests/banner/Slice_1-removebg-preview.png'
 
 const Banner = () => {
   return (
-    <div className="bg-banner">
+    <div className="">
     <div className="container  md:mt-20 lg:mt-20">
       <section className="grid-section items-center sub-text-layout">
         <div className="mt-10">
@@ -23,7 +24,7 @@ const Banner = () => {
             </button>
           </Link>
           <div>
-            <div className='flex justify-start item-center space-x-3 mt-5'>
+            <div className='flex justify-start item-center space-x-10 mt-5'>
                 <div>
                     <h1 className='font-bold text-4xl'>98K+</h1>
                     <p>Artwork</p>
@@ -41,7 +42,7 @@ const Banner = () => {
         </div>
 
         <div className="text-center">
-          img
+          <img src={BannerIMg}/>
         </div>
       </section>
     </div>
