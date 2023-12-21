@@ -1,44 +1,45 @@
-import React from 'react';
-import imgOne from '../assests/img/unsplash_F56Y7dgrAkc.png';
-import imgTwo from '../assests/img/unsplash_8uZPynIu-rQ.png';
-import imgFour from '../assests/img/unsplash_Tyg0rVhOTrE.png';
-import imgFive from '../assests/img/unsplash_wHJ5L9KGTl4.png';
-import Elpse from '../assests/img/rounded-img/Ellipse 95.png';
-import imgThree from '../assests/img/rounded-img/unsplash_k0rVudBoB4c.png';
-import Etrhereum from '../assests/logo/ethereum 2.png';
-import VerifyImg from '../assests/logo/verify 1.png';
-import imgSix from '../assests/img/rounded-img/unsplash_fT49QnFucQ8.png';
-import imgSeven from '../assests/img/rounded-img/unsplash_5MTf9XyVVgM.png';
-import imgEight from '../assests/img/rounded-img/unsplash_zkNT5mikUuo.png';
-import imgNine from '../assests/img/rounded-img/unsplash_WjIB-6UxA5Q.png';
+import React from "react";
+import imgOne from "../assests/img/unsplash_F56Y7dgrAkc.png";
+import imgTwo from "../assests/img/unsplash_8uZPynIu-rQ.png";
+import imgFour from "../assests/img/unsplash_Tyg0rVhOTrE.png";
+import imgFive from "../assests/img/unsplash_wHJ5L9KGTl4.png";
+import Elpse from "../assests/img/rounded-img/Ellipse 95.png";
+import imgThree from "../assests/img/rounded-img/unsplash_k0rVudBoB4c.png";
+import Etrhereum from "../assests/logo/ethereum 2 (1).png";
+import EtrhereumBlk from "../assests/logo/ethereum 2.png";
+import VerifyImg from "../assests/logo/verify 1.png";
+import imgSix from "../assests/img/rounded-img/unsplash_fT49QnFucQ8.png";
+import imgSeven from "../assests/img/rounded-img/unsplash_5MTf9XyVVgM.png";
+import imgEight from "../assests/img/rounded-img/unsplash_zkNT5mikUuo.png";
+import imgNine from "../assests/img/rounded-img/unsplash_WjIB-6UxA5Q.png";
 
 const data = [
   {
-    title: 'The Futr Abstr',
+    title: "The Futr Abstr",
     banner: imgTwo,
     logo: Elpse,
     ethLogo: Etrhereum,
-    eth: '0.25 ETH',
-    count: '1 of 8',
-    bidBtn: 'Place a bid',
+    eth: "0.25 ETH",
+    count: "1 of 8",
+    bidBtn: "Place a bid",
   },
   {
-    title: 'The Futr Abstr',
+    title: "The Futr Abstr",
     banner: imgFour,
     logo: Elpse,
     ethLogo: Etrhereum,
-    eth: '0.25 ETH',
-    count: '1 of 8',
-    bidBtn: 'Place a bid',
+    eth: "0.25 ETH",
+    count: "1 of 8",
+    bidBtn: "Place a bid",
   },
   {
-    title: 'The Futr Abstr',
+    title: "The Futr Abstr",
     banner: imgFive,
     logo: Elpse,
     ethLogo: Etrhereum,
-    eth: '0.25 ETH',
-    count: '1 of 8',
-    bidBtn: 'Place a bid',
+    eth: "0.25 ETH",
+    count: "1 of 8",
+    bidBtn: "Place a bid",
   },
 ];
 
@@ -46,63 +47,63 @@ const topCollectionData = [
   {
     numberCount: 1,
     logo: imgThree,
-    title: 'CryptoFunks',
+    title: "CryptoFunks",
     isVerify: true,
     verifyLogo: VerifyImg,
-    ethLogo: Etrhereum,
-    ethCount: '19,769.39',
-    percentage: '+26.52%',
+    ethLogo: EtrhereumBlk,
+    ethCount: "19,769.39",
+    percentage: "+26.52%",
     isPercentageUp: true,
   },
   {
     numberCount: 2,
     logo: imgSix,
-    title: 'Cryptix',
+    title: "Cryptix",
     isVerify: false,
-    verifyLogo: '',
-    ethLogo: Etrhereum,
-    ethCount: '2,769.39',
-    percentage: '+10.52%',
+    verifyLogo: "",
+    ethLogo: EtrhereumBlk,
+    ethCount: "2,769.39",
+    percentage: "+10.52%",
     isPercentageUp: false,
   },
   {
     numberCount: 3,
     logo: imgSeven,
-    title: 'Frensware',
+    title: "Frensware",
     isVerify: false,
-    verifyLogo: '',
-    ethLogo: Etrhereum,
-    ethCount: '9,232.39',
-    percentage: '+2.52%',
+    verifyLogo: "",
+    ethLogo: EtrhereumBlk,
+    ethCount: "9,232.39",
+    percentage: "+2.52%",
     isPercentageUp: true,
   },
   {
     numberCount: 4,
     logo: imgEight,
-    title: 'PunkArt',
+    title: "PunkArt",
     isVerify: true,
     verifyLogo: VerifyImg,
-    ethLogo: Etrhereum,
-    ethCount: '3,769.39',
-    percentage: '+1.52%',
+    ethLogo: EtrhereumBlk,
+    ethCount: "3,769.39",
+    percentage: "+1.52%",
     isPercentageUp: true,
   },
   {
     numberCount: 5,
     logo: imgNine,
-    title: 'Art Crypto',
+    title: "Art Crypto",
     isVerify: false,
-    verifyLogo: '',
-    ethLogo: Etrhereum,
-    ethCount: '10,769.39',
-    percentage: '+2.52%',
+    verifyLogo: "",
+    ethLogo: EtrhereumBlk,
+    ethCount: "10,769.39",
+    percentage: "+2.52%",
     isPercentageUp: false,
   },
 ];
 
 const TopCollectionOver = () => {
   return (
-    <div className="container">
+    <div className="container mt-24 mb-24">
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-16">
         <div>
           <img src={imgOne} />
@@ -132,16 +133,16 @@ const TopCollectionOver = () => {
               <div>
                 <h1>{i.title}</h1>
                 <div className="flex items-center space-x-2">
-                  <img src={i.logo} />
+                  <img src={i.logo} className="h-6 w-6" />
                   <div className="border border-green-600 text-green-600 px-2 py-1 rounded-lg">
-                    <div className="flex items-center space-x-1">
+                    <div className="flex jsutify-between items-center space-x-1">
                       <img src={i.ethLogo} />
-                      <p>{i.eth}</p>
+                      <p className="text-xs">{i.eth}</p>
                     </div>
                   </div>
-                  <div>{i.count}</div>
+                  <div className="text-xs text-gray-600">{i.count}</div>
                 </div>
-                <button className="border border-[#220970] hover:bg-[#3D00B7] hover:text-white rounded-full mt-5 px-4 py-2">
+                <button className="border-2 border-[#220970] hover:bg-[#3D00B7] hover:text-white text-[#220970] rounded-full mt-5 px-5 py-1">
                   {i.bidBtn}
                 </button>
               </div>
@@ -161,7 +162,7 @@ const TopCollectionOver = () => {
                     <img src={VerifyImg} />
                   </div>
                 ) : (
-                  ''
+                  ""
                 )}
               </div>
               <div>

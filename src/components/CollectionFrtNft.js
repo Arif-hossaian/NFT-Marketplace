@@ -56,27 +56,45 @@ const CollectionFrtNft = () => {
     <div className="bg-[#D9E0EC] py-16">
       <div className="container">
         <div>
-          <h1 className="text-3xl font-bold">COLLECTION FEATURED NFTS</h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 mt-10">
-            {data.map((i, index) => (
-              <div key={index} className="">
-                <div className="flex justify-between">
-                  <img src={i.banner1} className="w-70" />
-                  <div>
-                    <img src={i.subBanner1} />
-                    <img src={i.subBanner2} />
-                    <img src={i.subBanner3} />
+          <h1 className="text-3xl font-bold mb-6">COLLECTION FEATURED NFTS</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {data.map((item, index) => (
+              <div key={index}>
+                <div className="mb-4">
+                  <div className="flex justify-between space-x-2">
+                    <img
+                      src={item.banner1}
+                      className="w-2/3"
+                      alt={`Banner ${index}`}
+                    />
+                    <div className="flex flex-col justify-between w-1/3 space-y-2">
+                      <img
+                        src={item.subBanner1}
+                        className="mb-2"
+                        alt={`SubBanner 1 ${index}`}
+                      />
+                      <img
+                        src={item.subBanner2}
+                        className="mb-2"
+                        alt={`SubBanner 2 ${index}`}
+                      />
+                      <img src={item.subBanner3} alt={`SubBanner 3 ${index}`} />
+                    </div>
                   </div>
                 </div>
                 <div>
-                  <h1 className="font-bold text-lg">{i.title}</h1>
-                  <div className="flex justify-between">
-                    <div className="flex justify-start items-center">
-                      <img src={i.logo} />
-                      <p>{i.logoName}</p>
+                  <h1 className="font-bold text-lg mb-2">{item.title}</h1>
+                  <div className="flex justify-between items-center">
+                    <div className="flex items-center space-x-2">
+                      <img
+                        src={item.logo}
+                        className="h-6 w-6"
+                        alt={`Logo ${index}`}
+                      />
+                      <p>{item.logoName}</p>
                     </div>
-                    <button className="border border-indigo-600 px-2 py-1 rounded-xl">
-                      {i.totalCount}
+                    <button className="border-2 text-[#2639ED] text-sm border-[#2639ED] px-4 py-1 rounded-full">
+                      {item.totalCount}
                     </button>
                   </div>
                 </div>

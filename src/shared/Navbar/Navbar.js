@@ -49,17 +49,17 @@ export const Navbar = () => {
       className={clsx(
         "fixed inset-x-0 top-0 z-40  transition-colors duration-300",
         isSticky
-          ? "border-b border-slate-200 h-16 bg-[#fafafa]"
+          ? "border-b border-slate-200 h-20 bg-[#fafafa]"
           : "bg-transparent",
       )}
     >
       <nav className=" nav-container">
         <div className="flex justify-between items-center">
           <h1 className="text-[#3D00B7] font-bold text-3xl">NFTERS</h1>
-          <div className="font-semibold">Marketplace</div>
-          <div className="font-semibold">Resource</div>
-          <div className="font-semibold">About</div>
-          <div className="relative text-gray-600">
+          <div className="hidden md:flex font-semibold">Marketplace</div>
+          <div className="hidden md:flex font-semibold">Resource</div>
+          <div className="hidden md:flex font-semibold">About</div>
+          <div className="relative hidden md:flex  text-gray-600">
             <input
               type="search"
               name="search"
@@ -86,15 +86,15 @@ export const Navbar = () => {
             </button>
           </div>
 
-          <button className="border border-gray-900 p-2 bg-[#3D00B7] rounded-full px-8 text-white py-3">
+          <button className="border hidden md:flex  border-gray-900 p-2 bg-[#3D00B7] rounded-full px-10 text-white py-2">
             Upload
           </button>
-          <button className="border border-[#3D00B7] p-2 text-[#3D00B7] rounded-full px-8 py-3">
+          <button className="border-2 hidden md:flex  border-[#3D00B7] p-2 text-[#3D00B7] rounded-full px-8 py-2">
             Connect Wallet
           </button>
+          <MenuPopOver display="flex md:hidden" />
         </div>
       </nav>
-      <MenuPopOver display="flex md:hidden" />
     </div>
   );
 };
