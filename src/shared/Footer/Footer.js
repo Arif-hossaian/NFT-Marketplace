@@ -217,7 +217,7 @@ const Footer = () => {
                     />
 
                     <button
-                      class="absolute right-0 top-0 bottom-0 bg-indigo-500 px-8 py-3 font-medium text-white rounded-full transition hover:bg-indigo-600"
+                      class="absolute right-0 top-0 bottom-0 bg-[#2639ED] px-8 py-3 font-medium text-white rounded-full transition hover:bg-indigo-600"
                       type="submit"
                     >
                       Subscribe
