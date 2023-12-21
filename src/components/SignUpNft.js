@@ -30,18 +30,20 @@ const SignUpNft = () => {
               />
             }
           />
-          <FloatingItems
-            Icon={
-              <img
-                src={ImgTwo}
-                // style={{ marginTop: 150, marginLeft: 80 }}
-                className="md:mt-48 lg:mt-48  md:ml-16 lg:ml-16 ml-0"
-                width={180}
-              />
-            }
-          />
+          <div className="mt-28 md:mt-0 lg:mt-0">
+            <FloatingItems
+              Icon={
+                <img
+                  src={ImgTwo}
+                  // style={{ marginTop: 150, marginLeft: 80 }}
+                  className="md:mt-48 lg:mt-48 mt-96 md:ml-16 lg:ml-16 ml-0"
+                  width={180}
+                />
+              }
+            />
+          </div>
         </div>
-        <div className=" ml-28">
+        <div className="mt-72 md:mt-0 lg:mt-0 ml-28">
           <h2 className="text-3xl text-gray-900 font-bold">CREATE AND</h2>
           <h2 className="text-3xl text-gray-900 font-bold">SELL YOUR NFT</h2>
 

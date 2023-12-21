@@ -14,89 +14,13 @@
 .container-sm {
   @apply mx-auto max-w-screen-md;
 }
-.sub-text-layout {
-  @apply text-center md:text-left lg:text-left;
-}
-.section-flex-with-reverse {
-  @apply flex flex-col-reverse md:flex-row lg:flex-row items-center;
-}
-.section-flex {
-  @apply flex flex-col md:flex-row lg:flex-row items-center;
-}
-/* Banner.jsx */
-.bg-banner {
-  @apply bg-[#fafafa];
-  /* @apply bg-[#fafafa] dark:bg-gray-600; */
-}
-.banner-button {
-  @apply text-white bg-[#3D00B7] hover:text-white border  px-6 py-3 font-normal rounded-full md:px-12 md:py-3 lg:px-12 lg:py-3 text-center mr-2 mb-2  md:font-bold lg:font-bold text-2xl;
-}
-/* index.js */
-.bg-others-section {
-  @apply  bg-gray-100;
-}
-
-.section-header {
-  @apply text-[#22292f] font-bold text-4xl md:text-5xl lg:text-5xl;
-}
-.section-subHeader {
-  @apply text-lg text-[#8795a1] ;
-}
-.keyTitle {
-  @apply  text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2;
-}
-
 .grid-section {
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 my-16;
 }
-
-.footer-grid {
-  @apply grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4;
-}
-.project-counter-grid {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mt-10;
-}
-
 .contact-grid-section {
   @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-16 mt-10;
 }
 
-.contact-form-label {
-  @apply peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0   peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6;
-}
-.single-project-grid-section {
-  @apply grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-10 mt-10;
-}
-
-.glow-on-hover {
-  width: 90%;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #19bed1;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-}
-
-.glow-on-hover:before {
-  content: '';
-  background: linear-gradient(
-    45deg,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-}
-
-.works{
-  background-color: black !important;
+.banner-button {
+  @apply text-white bg-[#3D00B7] hover:text-white border  px-6 py-3 font-normal rounded-full md:px-12 md:py-3 lg:px-12 lg:py-3 text-center mr-2 mb-2  md:font-bold lg:font-bold text-xl;
 }

@@ -246,12 +246,14 @@ const DiscoverNfts = () => {
                   </div>
                 </div>
               </div>
-              <div className="mt-10">
+              <div className="mt-10 mx-2">
                 <h1>{i.title}</h1>
                 <div className="flex justify-between items-center">
-                  <div className="flex justify-start items-center space-x-3">
+                  <div className="flex justify-start items-center space-x-1">
                     <img src={i.ethLogo} />
-                    <p className="text-xs text-green-600">{i.eCount}</p>
+                    <p className="text-xs font-bold text-green-600">
+                      {i.eCount}
+                    </p>
                   </div>
                   <div className="text-sm text-[#838383]">{i.qty}</div>
                 </div>
@@ -266,7 +268,7 @@ const DiscoverNfts = () => {
           ))}
         </div>
         <div className="flex justify-center text-center items-center mt-16">
-          <div className="py-5 px-8 text-center border rounded-full border-[#3D00B7] text-[#3D00B7]">
+          <div className="py-4 px-8 text-center border rounded-full border-[#3D00B7] text-[#3D00B7]">
             More NFTs
           </div>
         </div>
